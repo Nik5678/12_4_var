@@ -1,0 +1,17 @@
+C:\Users\Sollist\Documents\ЛАБЫ\С#\WindowsFormPract\15 ЗАДАЧ\12 4 вариант\obj\Debug\net8.0-windows\_12_4_вариант.Form1.resources
+C:\Users\Sollist\Documents\ЛАБЫ\С#\WindowsFormPract\15 ЗАДАЧ\12 4 вариант\obj\Debug\net8.0-windows\12 4 вариант.csproj.GenerateResource.cache
+C:\Users\Sollist\Documents\ЛАБЫ\С#\WindowsFormPract\15 ЗАДАЧ\12 4 вариант\obj\Debug\net8.0-windows\12 4 вариант.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sollist\Documents\ЛАБЫ\С#\WindowsFormPract\15 ЗАДАЧ\12 4 вариант\obj\Debug\net8.0-windows\12 4 вариант.AssemblyInfoInputs.cache
+C:\Users\Sollist\Documents\ЛАБЫ\С#\WindowsFormPract\15 ЗАДАЧ\12 4 вариант\obj\Debug\net8.0-windows\12 4 вариант.AssemblyInfo.cs
+C:\Users\Sollist\Documents\ЛАБЫ\С#\WindowsFormPract\15 ЗАДАЧ\12 4 вариант\obj\Debug\net8.0-windows\12 4 вариант.csproj.CoreCompileInputs.cache
+C:\Users\Sollist\Documents\ЛАБЫ\С#\WindowsFormPract\15 ЗАДАЧ\12 4 вариант\bin\Debug\net8.0-windows\12 4 вариант.exe
+C:\Users\Sollist\Documents\ЛАБЫ\С#\WindowsFormPract\15 ЗАДАЧ\12 4 вариант\bin\Debug\net8.0-windows\12 4 вариант.deps.json
+C:\Users\Sollist\Documents\ЛАБЫ\С#\WindowsFormPract\15 ЗАДАЧ\12 4 вариант\bin\Debug\net8.0-windows\12 4 вариант.runtimeconfig.json
+C:\Users\Sollist\Documents\ЛАБЫ\С#\WindowsFormPract\15 ЗАДАЧ\12 4 вариант\bin\Debug\net8.0-windows\12 4 вариант.dll
+C:\Users\Sollist\Documents\ЛАБЫ\С#\WindowsFormPract\15 ЗАДАЧ\12 4 вариант\bin\Debug\net8.0-windows\12 4 вариант.pdb
+C:\Users\Sollist\Documents\ЛАБЫ\С#\WindowsFormPract\15 ЗАДАЧ\12 4 вариант\obj\Debug\net8.0-windows\12 4 вариант.dll
+C:\Users\Sollist\Documents\ЛАБЫ\С#\WindowsFormPract\15 ЗАДАЧ\12 4 вариант\obj\Debug\net8.0-windows\refint\12 4 вариант.dll
+C:\Users\Sollist\Documents\ЛАБЫ\С#\WindowsFormPract\15 ЗАДАЧ\12 4 вариант\obj\Debug\net8.0-windows\12 4 вариант.pdb
+C:\Users\Sollist\Documents\ЛАБЫ\С#\WindowsFormPract\15 ЗАДАЧ\12 4 вариант\obj\Debug\net8.0-windows\12 4 вариант.genruntimeconfig.cache
+C:\Users\Sollist\Documents\ЛАБЫ\С#\WindowsFormPract\15 ЗАДАЧ\12 4 вариант\obj\Debug\net8.0-windows\ref\12 4 вариант.dll
+C:\Users\Sollist\Documents\ЛАБЫ\С#\WindowsFormPract\15 ЗАДАЧ\12 4 вариант\obj\Debug\net8.0-windows\12 4 вариант.sourcelink.json

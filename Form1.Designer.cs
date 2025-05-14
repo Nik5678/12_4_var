@@ -42,6 +42,7 @@
             // 
             // pictureBoxOriginal
             // 
+            pictureBoxOriginal.BorderStyle = BorderStyle.Fixed3D;
             pictureBoxOriginal.Location = new Point(22, 17);
             pictureBoxOriginal.Name = "pictureBoxOriginal";
             pictureBoxOriginal.Size = new Size(472, 463);
@@ -50,6 +51,7 @@
             // 
             // pictureBoxProcessed
             // 
+            pictureBoxProcessed.BorderStyle = BorderStyle.Fixed3D;
             pictureBoxProcessed.Location = new Point(568, 17);
             pictureBoxProcessed.Name = "pictureBoxProcessed";
             pictureBoxProcessed.Size = new Size(568, 463);
@@ -97,6 +99,7 @@
             btnLoad.TabIndex = 5;
             btnLoad.Text = "Загрузить изображение";
             btnLoad.UseVisualStyleBackColor = true;
+            btnLoad.Click += btnLoad_Click;
             // 
             // btnApply
             // 
@@ -106,21 +109,25 @@
             btnApply.TabIndex = 6;
             btnApply.Text = "Применить фильтр";
             btnApply.UseVisualStyleBackColor = true;
+            btnApply.Click += btnApply_Click_1;
             // 
             // btnSave
             // 
+            pictureBoxOriginal.Image = _originalImage;
+            pictureBoxProcessed.Image = _processedImage;
             btnSave.Location = new Point(299, 503);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(103, 48);
             btnSave.TabIndex = 7;
             btnSave.Text = "Сохранить результат";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click_1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1258, 605);
+            ClientSize = new Size(1256, 610);
             Controls.Add(btnSave);
             Controls.Add(btnApply);
             Controls.Add(btnLoad);
@@ -138,7 +145,6 @@
         }
 
         #endregion
-
         private PictureBox pictureBoxOriginal;
         private PictureBox pictureBoxProcessed;
         private RadioButton radioButtonR;

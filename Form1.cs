@@ -1,19 +1,20 @@
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.Windows.Forms;
+
 namespace _12_4_вариант
 {
-    using System.Drawing;
-    using System.Drawing.Imaging;
-    using System.Windows.Forms;
-    using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
-
     public partial class Form1 : Form
     {
         private Bitmap? _originalImage;
         private Bitmap? _processedImage;
+
         public Form1()
         {
             InitializeComponent();
             radioButtonR.Checked = true;
         }
+
         private void btnLoad_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog dialog = new OpenFileDialog())
@@ -21,11 +22,19 @@ namespace _12_4_вариант
                 dialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
                 if (dialog.ShowDialog() == DialogResult.OK)
                 {
-                    _originalImage = new Bitmap(dialog.FileName);
-                    pictureBoxOriginal.Image = _originalImage;
+                    try
+                    {
+                        _originalImage = new Bitmap(dialog.FileName);
+                        pictureBoxOriginal.Image = _originalImage;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Ошибка загрузки изображения: {ex.Message}");
+                    }
                 }
             }
         }
+
         private void btnApply_Click(object sender, EventArgs e)
         {
             if (_originalImage == null)
@@ -74,12 +83,59 @@ namespace _12_4_вариант
                 MessageBox.Show("Нет обработанного изображения!");
                 return;
             }
+
             using (SaveFileDialog dialog = new SaveFileDialog())
             {
                 dialog.Filter = "PNG Image|*.png";
                 if (dialog.ShowDialog() == DialogResult.OK)
                 {
                     _processedImage.Save(dialog.FileName, ImageFormat.Png);
+                }
+            }
+        }
+
+        private void btnApply_Click_1(object sender, EventArgs e)
+        {
+            if (_originalImage == null)
+            {
+                MessageBox.Show("Сначала загрузите изображение!");
+                return;
+            }
+
+            string selectedChannel = "R";
+            if (radioButtonG.Checked) selectedChannel = "G";
+            if (radioButtonB.Checked) selectedChannel = "B";
+
+            _processedImage = ApplyChannelFilter(_originalImage, selectedChannel);
+
+            if (_processedImage != null)
+            {
+                pictureBoxProcessed.Image = _processedImage;
+            }
+        }
+
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+            if (_processedImage == null)
+            {
+                MessageBox.Show("Нет обработанного изображения для сохранения.");
+                return;
+            }
+
+            using (SaveFileDialog dialog = new SaveFileDialog())
+            {
+                dialog.Filter = "PNG Image|*.png";
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        _processedImage.Save(dialog.FileName, ImageFormat.Png);
+                        MessageBox.Show("Изображение успешно сохранено!");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Ошибка при сохранении: {ex.Message}");
+                    }
                 }
             }
         }
